@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A56DD8CC296ECAF4008B7614 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56DD8CB296ECAF4008B7614 /* FirstViewController.swift */; };
 		A5CF24DA296C1E3800CF3D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF24D9296C1E3800CF3D3B /* AppDelegate.swift */; };
 		A5CF24DC296C1E3800CF3D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF24DB296C1E3800CF3D3B /* SceneDelegate.swift */; };
-		A5CF24DE296C1E3800CF3D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF24DD296C1E3800CF3D3B /* ViewController.swift */; };
 		A5CF24E1296C1E3800CF3D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CF24DF296C1E3800CF3D3B /* Main.storyboard */; };
 		A5CF24E3296C1E3C00CF3D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5CF24E2296C1E3C00CF3D3B /* Assets.xcassets */; };
 		A5CF24E6296C1E3C00CF3D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CF24E4296C1E3C00CF3D3B /* LaunchScreen.storyboard */; };
@@ -21,10 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A56DD8CB296ECAF4008B7614 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		A5CF24D6296C1E3800CF3D3B /* CustomCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CF24D9296C1E3800CF3D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5CF24DB296C1E3800CF3D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5CF24DD296C1E3800CF3D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5CF24E0296C1E3800CF3D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5CF24E2296C1E3C00CF3D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5CF24E5296C1E3C00CF3D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A56DD8CD296ECB25008B7614 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF24F3296C1FCF00CF3D3B /* TableCell.swift */,
+				A5CF24F4296C1FD000CF3D3B /* TableCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A56DD8CE296ECDB0008B7614 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF24F1296C1F9100CF3D3B /* TableViewController.swift */,
+				A56DD8CB296ECAF4008B7614 /* FirstViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A56DD8CF296ED04B008B7614 /* Model, Service */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF24ED296C1EF900CF3D3B /* Model.swift */,
+				A5CF24EF296C1F2800CF3D3B /* Service.swift */,
+			);
+			path = "Model, Service";
+			sourceTree = "<group>";
+		};
 		A5CF24CD296C1E3800CF3D3B = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +93,12 @@
 		A5CF24D8296C1E3800CF3D3B /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				A56DD8CE296ECDB0008B7614 /* Controllers */,
+				A56DD8CF296ED04B008B7614 /* Model, Service */,
+				A56DD8CD296ECB25008B7614 /* Cell */,
 				A5CF24D9296C1E3800CF3D3B /* AppDelegate.swift */,
 				A5CF24DB296C1E3800CF3D3B /* SceneDelegate.swift */,
-				A5CF24DD296C1E3800CF3D3B /* ViewController.swift */,
-				A5CF24F1296C1F9100CF3D3B /* TableViewController.swift */,
 				A5CF24DF296C1E3800CF3D3B /* Main.storyboard */,
-				A5CF24ED296C1EF900CF3D3B /* Model.swift */,
-				A5CF24EF296C1F2800CF3D3B /* Service.swift */,
-				A5CF24F3296C1FCF00CF3D3B /* TableCell.swift */,
-				A5CF24F4296C1FD000CF3D3B /* TableCell.xib */,
 				A5CF24E2296C1E3C00CF3D3B /* Assets.xcassets */,
 				A5CF24E4296C1E3C00CF3D3B /* LaunchScreen.storyboard */,
 				A5CF24E7296C1E3C00CF3D3B /* Info.plist */,
@@ -154,9 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5CF24DE296C1E3800CF3D3B /* ViewController.swift in Sources */,
 				A5CF24F2296C1F9100CF3D3B /* TableViewController.swift in Sources */,
 				A5CF24DA296C1E3800CF3D3B /* AppDelegate.swift in Sources */,
+				A56DD8CC296ECAF4008B7614 /* FirstViewController.swift in Sources */,
 				A5CF24F5296C1FD000CF3D3B /* TableCell.swift in Sources */,
 				A5CF24F0296C1F2800CF3D3B /* Service.swift in Sources */,
 				A5CF24DC296C1E3800CF3D3B /* SceneDelegate.swift in Sources */,

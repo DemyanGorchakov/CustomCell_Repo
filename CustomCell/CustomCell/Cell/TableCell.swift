@@ -17,7 +17,6 @@ class TableCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     func setCardCell(_ card: Card) {
